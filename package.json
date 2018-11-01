@@ -1,0 +1,16 @@
+{
+    "name": "toolbox-test",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "prepare": "npm run prepare:back && npm run prepare:front",  
+      "prepare:back": "cd back && npm install",
+      "prepare:front": "cd front && npm install",
+      "back:serve": "npm run front:build && cd back && npm run serve",
+      "back:test": "cd back && npm run test",
+      "front:serve": "cd front && npm run start",
+      "front:build": "cd front && npm run build",
+      "front:test": "cd front && npm run test"
+    }
+  }
+  
