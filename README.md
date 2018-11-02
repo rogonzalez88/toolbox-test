@@ -1,28 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El proyecto fue creado en react con base de create-react-app y express como back bien simple,
+se utilizo create-react-app por su sencillez y buenas practicas ya implementadas, sin embargo
+lo pudiese hacer con babel o  webpack segun solicitud y con un manejador de task como gulp y 
+nodemon quizas para desarrollo del back.
 
-## Available Scripts
+### `npm run prepare`
 
-In the project directory, you can run:
+Para inicializar el environment, funciona como un postscript install. realiza un npm install en las respectivas carpetas de back y front
 
-### `npm start`
+### `npm back:serve`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Inicializa el back con el puerto 8080, (https://localhost:8080), donde el path base devuelve el front y (https://localhost:8080/api/text)
+la api solicitada
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### `npm back:test`
 
-### `npm test`
+Ejecuta las pruebas de back
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm front:serve`
 
-### `npm run build`
+Inicializa el front para desarrollo con la herramienta de create-react-app
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm front:build`
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Realiza el procesamiento js y css y crea los bundles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm front:test`
+
+Ejecuta las pruebas de front
